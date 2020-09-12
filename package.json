@@ -2,5 +2,15 @@
   "name": "css-plant",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.26.12",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss main.css",
+    "watch-css": "nodemon -e scss -x \"yarn build-css\"",
+    "reload": "browser-sync start --server --files \"*.css\" \"*.html\""
+  }
 }
