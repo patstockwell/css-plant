@@ -1,0 +1,190 @@
+$light-green: #449A07;
+$stem-light-green: #58B202;
+
+.leaves {
+  position: relative;
+
+  .stem-two {
+    position: absolute;
+    width: 43px;
+    height: 253px;
+    background-color: transparent;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    bottom: -21px;
+    left: 58px;
+    box-shadow: 6px -2px 0px 0px #58B202;
+    z-index: 1;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -17px;
+      left: 18px;
+      background-color: white;
+      height: 18px;
+      width: 3px;
+      border-radius: 5px;
+      z-index: 3;
+      box-sizing: border-box;
+      transform: rotate(-40deg);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -3px;
+      left: -11px;
+      background-color: transparent;
+      height: 40px;
+      width: 48px;
+      border-radius: 50%;
+      z-index: 3;
+      box-sizing: border-box;
+      box-shadow: 0px -7px 0 0 pink;
+      border-width: 7px 0 0 0;
+      border-color: purple;
+      border-style: solid;
+      border-radius: 50% / 43%;
+      transform: rotate(10deg);
+    }
+  }
+
+  .stem-one {
+    position: absolute;
+    width: 73px;
+    height: 213px;
+    background-color: transparent;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    bottom: -21px;
+    left: 90px;
+    box-shadow: -6px -2px 0px 0px #58B202;
+    z-index: 1;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -12px;
+      left: 41px;
+      background-color: white;
+      height: 18px;
+      width: 3px;
+      border-radius: 5px;
+      z-index: 3;
+      box-sizing: border-box;
+      transform: rotate(80deg);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 11px;
+      background-color: transparent;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      z-index: 3;
+      box-sizing: border-box;
+      box-shadow: 0px -11px 0 0 pink;
+      border-width: 7px 0 0 0;
+      border-color: purple;
+      border-style: solid;
+      border-radius: 50% / 43%;
+      transform: rotate(50deg);
+    }
+  }
+
+  .leaf-six {
+    position: absolute;
+    width: 43px;
+    height: 122px;
+    background-color: green;
+    bottom: 0;
+    left: 70px;
+    border-radius: 23% 61% 74% 72% / 50% 50% 53% 66%;
+  }
+
+  .leaf-five {
+    position: absolute;
+    width: 46px;
+    height: 100px;
+    background-color: darkgreen;
+    bottom: -93px;
+    left: 62px;
+    border-radius: 33% 30% 16% 65% / 50% 50% 50% 39%;
+    box-shadow: 2px -5px 0px -2px $light-green;
+    z-index: 3;
+  }
+
+  .leaf-four {
+    position: absolute;
+    width: 100px;
+    height: 110px;
+    border-width: 0 30px 0 0;
+    border-color: darkgreen;
+    border-style: solid;
+    border-radius: 50% / 43%;
+    box-shadow: 12px 2px 0 0 green;
+    bottom: -110px;
+    right: 41px;
+    z-index: 3;
+    box-sizing: border-box;
+  }
+
+  .leaf-three {
+    position: absolute;
+    width: 200px;
+    height: 168px;
+    border-width: 28px 0 0 0;
+    border-style: solid;
+    border-color: darkgreen;
+    border-radius: 50%;
+    box-shadow: 13px -19px 0 0 $light-green;
+    bottom: -138px;
+    left: -111px;
+    box-sizing: border-box;
+  }
+
+  .leaf-two {
+    position: absolute;
+    width: 166px;
+    height: 143px;
+    border-width: 18px 0 0 0;
+    border-color: green;
+    border-style: solid;
+    border-radius: 50%;
+    box-shadow: 2px -21px 0 0 $light-green;
+    bottom: -120px;
+    right: -58px;
+    box-sizing: border-box;
+  }
+
+  .leaf {
+    width: 60px;
+    height: 150px;
+    border-width: 0 30px 0 0;
+    border-color: $light-green;
+    border-style: solid;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: 22px;
+    transform: rotate(-30deg);
+    box-sizing: border-box;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      background: transparent;
+      border-style: solid;
+      border-color: green;
+      border-width: 0 15px 0 0;
+      border-radius: 100%;
+      width: 15px;
+      height: 100%;
+      box-sizing: content-box;
+    }
+  }
+}

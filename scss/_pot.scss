@@ -1,0 +1,62 @@
+$dark-brown: #A4632E;
+$light-brown: #B47244;
+$inverse-shadow-color: rgba(255, 255, 255, 0.1);
+
+.pot {
+  width: 100%;
+
+  .rim {
+    height: 26px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    .inverse-shadow {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: $inverse-shadow-color;
+    }
+
+    .left {
+      background-color: $dark-brown;
+      flex-basis: 50%;
+    }
+    .right {
+      background-color: $light-brown;
+      flex-basis: 50%;
+    }
+  }
+
+  .base {
+    height: 100px;
+    width: 84%;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    transform: perspective(10px) rotateX(-1deg);
+    z-index: 0;
+
+    .inverse-shadow {
+      position: absolute;
+      width: calc(100% + 27px);
+      height: 156px;
+      background: $inverse-shadow-color;
+      bottom: -67px;
+      border-radius: 128px 0 0 0;
+      left: -27px;
+    }
+
+    .left {
+      background-color: $dark-brown;
+      flex-basis: 50%;
+    }
+    .right {
+      background-color: $light-brown;
+      flex-basis: 50%;
+    }
+  }
+}

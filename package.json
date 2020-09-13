@@ -9,6 +9,7 @@
     "nodemon": "^2.0.4"
   },
   "scripts": {
+    "start": "yarn watch-css",
     "build-css": "node-sass --include-path scss scss/main.scss main.css",
     "watch-css": "nodemon -e scss -x \"yarn build-css\"",
     "reload": "browser-sync start --server --files \"*.css\" \"*.html\""
