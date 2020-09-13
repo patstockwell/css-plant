@@ -1,13 +1,12 @@
 body {
   margin: 0;
-  background-color: gold;
+  background-color: darkcyan;
   min-height: 100vh; }
 
 .background .container {
   width: 200px;
   height: 500px;
   margin: 40px auto;
-  background-color: blue;
   display: flex;
   flex-direction: column;
   justify-content: flex-end; }
@@ -224,3 +223,12 @@ body {
       width: 15px;
       height: 100%;
       box-sizing: content-box; }
+
+.floor {
+  height: 4px;
+  width: 150%;
+  background-color: aqua;
+  border-radius: 4px;
+  position: relative;
+  right: 28px;
+  top: -4px; }
