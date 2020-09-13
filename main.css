@@ -226,9 +226,9 @@ body {
 
 .floor {
   height: 4px;
-  width: 150%;
+  width: 230%;
   background-color: aqua;
   border-radius: 4px;
   position: relative;
-  right: 28px;
+  right: 138px;
   top: -4px; }
