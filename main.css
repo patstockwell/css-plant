@@ -17,17 +17,19 @@ body {
   background-color: brown;
   margin: 0 auto -16px;
   border-radius: 60% / 50%;
-  z-index: 1; }
+  z-index: 0; }
 
 .pot {
-  width: 100%; }
+  width: 100%;
+  perspective: 10px; }
   .pot .rim {
     height: 26px;
     width: 100%;
     display: flex;
     position: relative;
     overflow: hidden;
-    z-index: 1; }
+    z-index: 1;
+    transform: rotateX(0.5deg); }
     .pot .rim .inverse-shadow {
       position: absolute;
       width: 100%;
@@ -46,7 +48,7 @@ body {
     display: flex;
     position: relative;
     overflow: hidden;
-    transform: perspective(10px) rotateX(-1deg);
+    transform: rotateX(-1deg);
     z-index: 0; }
     .pot .base .inverse-shadow {
       position: absolute;

@@ -4,6 +4,7 @@ $inverse-shadow-color: rgba(255, 255, 255, 0.1);
 
 .pot {
   width: 100%;
+  perspective: 10px;
 
   .rim {
     height: 26px;
@@ -12,6 +13,7 @@ $inverse-shadow-color: rgba(255, 255, 255, 0.1);
     position: relative;
     overflow: hidden;
     z-index: 1;
+    transform: rotateX(0.5deg);
 
     .inverse-shadow {
       position: absolute;
@@ -37,7 +39,7 @@ $inverse-shadow-color: rgba(255, 255, 255, 0.1);
     display: flex;
     position: relative;
     overflow: hidden;
-    transform: perspective(10px) rotateX(-1deg);
+    transform: rotateX(-1deg);
     z-index: 0;
 
     .inverse-shadow {
